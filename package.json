@@ -1,0 +1,28 @@
+{
+  "name": "hello-jenkins",
+  "version": "1.0.0",
+  "description": "Hello to Jenkins",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "test": "mocha --exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pglh-test/hello-jenkins.git"
+  },
+  "keywords": [
+    "hello",
+    "world",
+    "jenkins"
+  ],
+  "author": "Peter Hall <peter@jamieai.com>",
+  "license": "UNLICENSED",
+  "homepage": "https://github.com/pglh-test/hello-jenkins",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "ioredis": "^4.0.0"
+  }
+}
