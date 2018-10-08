@@ -6,15 +6,15 @@ node {
   
   try {
     checkout scm
-    echo 'Installing dependencies'
+    print 'Installing dependencies'
     sh 'npm install'
     sh 'pwd'
   }
   catch (err) {
     currentBuild.result = "FAILURE"
-    echo 'Caught an error'
-    echo err
-    echo "project build error is here: ${env.BUILD_URL}"
+    print 'Caught an error'
+    print err
+    print "project build error is here: ${env.BUILD_URL}"
     throw err
   }
 }
