@@ -26,9 +26,9 @@ node {
     
     try {
 
-       stage('Checkout') {
+       // stage('Checkout') {
           checkout scm
-       }
+       // }
 
        /*stage('Test') {
 
@@ -48,14 +48,14 @@ node {
             sh './dockerBuild.sh'
        }*/
 
-       stage('Install Deps') {
+       // stage('Install Deps') {
          echo 'Installing dependencies'
          sh 'npm install'
-       }
+       // }
 
-       stage('Give me info') {
+       // stage('Give me info') {
          sh 'pwd'
-       }
+       // }
 
        /*stage('Deploy'){
 
