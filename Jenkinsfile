@@ -31,6 +31,7 @@ pipeline {
         echo 'Branch name is: ' + env.BRANCH_NAME
         sh 'pwd'
         sh 'ls'
+        sh 'git status'
       }
     }
     
