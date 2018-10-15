@@ -25,11 +25,11 @@ pipeline {
   
   stages {
     
-    stage('Checkout') {
+    /*stage('Checkout') {
       steps {
         // nothing yet
       }
-    }
+    }*/
     
     stage('Build') {
       steps {
