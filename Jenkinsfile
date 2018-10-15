@@ -25,11 +25,14 @@ pipeline {
   
   stages {
     
-    /*stage('Checkout') {
+    stage('Checkout') {
       steps {
-        // nothing yet
+        // echo branch name
+        echo 'Branch name is: ' + env.BRANCH_NAME
+        sh 'pwd'
+        sh 'ls'
       }
-    }*/
+    }
     
     stage('Build') {
       steps {
